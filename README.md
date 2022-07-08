@@ -24,6 +24,7 @@ docker inspect <CONTAINER_ID>
 ```Shell
 docker pull mcr.microsoft.com/mssql/server:2017-latest
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=docker@UPC09"-e "MSSQL_PID=Express"  -p 1433:1433 --name sql-server --hostname dbsql -d mcr.microsoft.com/mssql/server:2017-latest
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=docker@TPA09" -p 1433:1433 --name sql-server-2019 -d mcr.microsoft.com/mssql/server:2019-latest
 ```
 
 </p>
